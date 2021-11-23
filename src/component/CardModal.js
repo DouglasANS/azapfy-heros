@@ -26,10 +26,14 @@ export default function CardModal({heros}) {
       } = heros
 
     return (
-        <div className={styles.container} >
+        <div className={styles.container}>
             <figure>
                 <img src={img} alt="img" />
-                <h1>Publisher: {publisher}</h1>
+                <div>
+                    <h2>Alignment: {alignment}</h2>
+                    <img src={SetIconAligment(alignment)} alt="alignment"/>
+                </div>
+                
             </figure>
             <main>
                 <header>
@@ -101,10 +105,7 @@ export default function CardModal({heros}) {
                         <h3>{strength}</h3>
                     </article>
                 </section>
-                <footer>
-                    <h2>Alignment: {alignment}</h2>
-                    <img src={SetIconAligment(alignment)} alt="alignment"/>
-                </footer>
+                <h2>Publisher: {publisher}</h2>
             </main>
             
         </div>

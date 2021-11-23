@@ -11,8 +11,12 @@ export default function Home() {
 
 
     return (
-        <div className={styles.container}>
-            <input type="text" placeholder="Search..." onChange={(event)=>{setSearch(event.target.value)}} />
+        <div className={styles.container} >
+            <div className={styles.menu}>
+                <h1>Filter By Name</h1>
+                <input type="text" placeholder="Search..." onChange={(event)=>{setSearch(event.target.value)}} />
+            </div>
+            
             <div className={styles.cards}>            
             {
                 allHeros.filter((val)=>{

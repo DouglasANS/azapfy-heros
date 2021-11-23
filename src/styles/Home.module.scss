@@ -1,8 +1,23 @@
 .container{
-    
-       .cards{
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: center;
-       }
+    .menu{
+        background: rgb(240, 240, 240);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        h1{
+            font-family: sans-serif;
+        }
+    }
+
+    .cards{
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

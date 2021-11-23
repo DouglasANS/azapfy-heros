@@ -37,12 +37,14 @@
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4430147058823529) 75%, rgba(255,255,255,0.7147233893557423) 100%);        }
         div:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             height: 40%;
             width: 100%;
             border-radius: 10px;
-            background: rgb(0,0,0);
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8463760504201681) 75%, rgba(0,0,0,1) 100%);
-
+           background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5214460784313726) 24%, rgba(0,0,0,0.8435749299719888) 77%);
             & > h1{
                 color:rgb(255,255,255);
                 font-weight: 500;
@@ -57,7 +59,6 @@
                 
             }
             div{
-                margin-top: 20px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -65,13 +66,13 @@
                 img{
                     width: 100px;
                     height: 100%;
-                    padding-left: 15px;
+                    padding-left: 10px;
                 }
                 & > h1{
                     align-self: end;
                     font-size: 25px;
                     font-weight: 300;
-                    padding-right: 15px;
+                    padding-right: 10px;
                     color:rgb(255,255,255);
                     
                 }

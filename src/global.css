@@ -6,12 +6,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 *{
   padding: 0;
   margin: 0;
   font-family: 'Pridi', serif;
+  box-sizing: border-box;
 }
 
 code {

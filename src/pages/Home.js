@@ -7,32 +7,11 @@ export default function Home() {
     const {allHeros} = useContext(DataContext)
     const [search, setSearch] = useState('')
 
-    function heros(){
-        const publisher = []
-
-
-        for(var i = 0; i< allHeros.length; i++){
-            publisher.push(allHeros[i])           
-        }
-
-        var arrSemDuplicados = [...new Set(publisher)];
-        
-        console.log(arrSemDuplicados)
-        //console.log(allHeros.data[0].biography.publisher)
-        //console.log(publisher.indexOf(allHeros.data[0].biography.publisher))
-        //console.log(publisher.indexOf(allHeros.data[0].biography.publisher))
-
-        //publisher.push(allHeros.data[i].appearance.race) 
-        //publisher.push(allHeros.data[i].biography.alignment)
-        //publisher.push(allHeros.data[i].biography.publisher)
-    }
 
 
 
     return (
         <div className={styles.container}>
-            <h1>Home</h1>
-            <button onClick={heros}>show heros</button>
             <input type="text" placeholder="Search..." onChange={(event)=>{setSearch(event.target.value)}} />
             <div className={styles.cards}>            
             {
@@ -50,7 +29,21 @@ export default function Home() {
                                 name: item.name,
                                 img: item.images.md,
                                 alignment: item.biography.alignment,
-                                race: item.appearance.race
+                                race: item.appearance.race,
+                                eyeColor: item.appearance.eyeColor,
+                                gender: item.appearance.gender,
+                                hairColor: item.appearance.hairColor,
+                                weight: item.appearance.weight[1],
+                                height: item.appearance.height[1],
+                                firstAppearance: item.biography.firstAppearance,
+                                fullName: item.biography.fullName,
+                                publisher: item.biography.publisher,
+                                combat: item.powerstats.combat,
+                                durability: item.powerstats.durability,
+                                intelligence: item.powerstats.intelligence,
+                                power: item.powerstats.power,
+                                speed: item.powerstats.speed,
+                                strength: item.powerstats.strength,
                             }} />
                         </div>
                     )

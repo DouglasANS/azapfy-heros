@@ -1,5 +1,5 @@
 <h1 align="center">
-	# PokeApi Project
+	# azapfy-heros
 </h1>
 
 # About the project

@@ -3,7 +3,8 @@
 </h1>
 
 # About the project
-O projeto consiste na manipulação da Api: http://homologacao3.azapfy.com.br/api/ps/metahumans disponibilizado pela azapfy, A Api retorna vários personagens e o intuito do projeto é a criação de cards desses personagens, alem disso que seja possível fazer o filtro dos personagens e ao selecionar um card aparece um modal com mais informações do personagem selecionado. 
+O projeto consiste na manipulação da Api: http://homologacao3.azapfy.com.br/api/ps/metahumans, disponibilizado pela azapfy, que retorna dados de vários personagens. O projeto contém cards desses personagens, um input de filtragem dos personagens e um modal com mais informações ao selecionar o personagem. 
+
 # Technologies
 - ReactJs in function
 - React Router DOM

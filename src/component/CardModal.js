@@ -14,7 +14,6 @@ export default function CardModal({heros}) {
         hairColor,
         weight,
         height,
-        firstAppearance,
         fullName,
         publisher,
         combat,
@@ -28,10 +27,10 @@ export default function CardModal({heros}) {
     return (
         <div className={styles.container}>
             <figure>
-                <img src={img} alt="img" />
+                <img src={img} alt={name + " character image"} />
                 <div>
                     <h2>Alignment: {alignment}</h2>
-                    <img src={SetIconAligment(alignment)} alt="alignment"/>
+                    <img src={SetIconAligment(alignment)} alt={"Alignment: " + alignment}/>
                 </div>
                 
             </figure>
@@ -107,7 +106,6 @@ export default function CardModal({heros}) {
                 </section>
                 <h2>Publisher: {publisher}</h2>
             </main>
-            
         </div>
     )
 }

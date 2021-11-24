@@ -11,7 +11,6 @@ export default function DataProvider({ children }) {
         axios.get('http://homologacao3.azapfy.com.br/api/ps/metahumans').then((response) => {
             setAllHeros(response.data)
         })
-        
     },[])
 
   return (

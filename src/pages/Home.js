@@ -7,18 +7,20 @@ export default function Home() {
     const {allHeros} = useContext(DataContext)
     const [search, setSearch] = useState('')
 
-
-
-
     return (
         <div className={styles.container} >
             <div className={styles.menu}>
                 <h1>Filter By Name</h1>
-                <input type="text" placeholder="Search..." onChange={(event)=>{setSearch(event.target.value)}} />
+                <input 
+                type="text" 
+                placeholder="Search..." 
+                onChange={(event)=>{setSearch(event.target.value)}} 
+                />
             </div>
             
             <div className={styles.cards}>            
             {
+                // eslint-disable-next-line array-callback-return
                 allHeros.filter((val)=>{
                     if(search === ""){
                         return val
@@ -54,8 +56,6 @@ export default function Home() {
                 })
             }
             </div>
-           
-            
         </div>
     )
 }

@@ -43,8 +43,8 @@
             height: 40%;
             width: 100%;
             border-radius: 10px;
-           background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5214460784313726) 24%, rgba(0,0,0,0.8435749299719888) 77%);
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5214460784313726) 24%, rgba(0,0,0,0.8435749299719888) 77%);
             & > h1{
                 color:rgb(255,255,255);
                 font-weight: 500;
@@ -78,10 +78,5 @@ background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5214460784313
                 }
             }
         }
-    }
-
-
-    @media screen and (max-width: 375px){
-        
     }
 }
